@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap');
+
+$font-style: 'Shantell Sans', "cursive";
+$font-color1: white;
+$font-color2: #115ff4;
+$accent-color1: #aaaaaa;
+$accent-color2: #cccccc;
+$background-image-url: "https://t4.ftcdn.net/jpg/03/70/53/41/360_F_370534114_QlOF3dyriW4MWODGNz1GXuNMdqj118SI.jpg";
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url($background-image-url);
+    font-family: $font-style;
+    text-align: center;
+    color: $font-color1;
+}
+
+/*======================== Smaller screen ===================================*/
+
+div#app {
+    min-height: 100vh;
+    // min-height: 50vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+div#app > * {
+    flex: 1 1 100%;
+}
+
+h1 {
+    font-size: 10em;
+    // font-size: 15ch;
+    color: $font-color2;
+    text-shadow: 3px 3px 0 $accent-color2;
+}
+
+#play {
+    padding: 2px;
+}
+
+#username {
+    width: 15rem;
+    height: 1.5rem;
+    font-family: $font-style;
+    text-indent: 10px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 2rem;
+    margin: 0 auto;
+}
+

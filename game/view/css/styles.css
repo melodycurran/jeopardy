@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background-image: url("https://t4.ftcdn.net/jpg/03/70/53/41/360_F_370534114_QlOF3dyriW4MWODGNz1GXuNMdqj118SI.jpg");
+  font-family: "Shantell Sans", "cursive";
+  text-align: center;
+  color: white; }
+
+/*======================== Smaller screen ===================================*/
+div#app {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column; }
+
+div#app > * {
+  flex: 1 1 100%; }
+
+h1 {
+  font-size: 10em;
+  color: #115ff4;
+  text-shadow: 3px 3px 0 #cccccc; }
+
+#play {
+  padding: 2px; }
+
+#username {
+  width: 15rem;
+  height: 1.5rem;
+  font-family: "Shantell Sans", "cursive";
+  text-indent: 10px; }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 2rem;
+  margin: 0 auto; }
+
+/*# sourceMappingURL=styles.css.map */
