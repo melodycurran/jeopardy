@@ -26,19 +26,20 @@ body {
 
 div#app {
     min-height: 100vh;
-    // min-height: 50vh;
     position: relative;
     display: flex;
     flex-direction: column;
+
+    > * {
+        flex: 1 1 100%;
+    }
 }
 
-div#app > * {
-    flex: 1 1 100%;
-}
+// div#app > * {
+//     flex: 1 1 100%;
+// }
 
 h1 {
-    font-size: 10em;
-    // font-size: 15ch;
     color: $font-color2;
     text-shadow: 3px 3px 0 $accent-color2;
 }
@@ -54,12 +55,12 @@ h1 {
     text-indent: 10px;
 }
 
-#jeopardy-board {
-    width: auto;
+#jeopardy-board__div {
+    width: 70%;
     background-color: black;
     display: flex;
     align-content: center;
-    margin: 5% auto 5rem;
+    margin: 6% auto 5rem;
     padding: 1em;
 }
 
@@ -69,27 +70,129 @@ h1 {
     padding: 0 1rem;
     flex-wrap: wrap;
     align-self: flex-end;
+
+    li {
+        width: 7rem;
+        height: 4rem;
+        flex: auto;
+        list-style: none;
+        margin-top: .5rem;
+
+        button {
+            width: 7rem;
+            height: 4rem;
+        }
+    }
 }
 
-#jeopardy-board ul li {
-    flex: auto;
-    list-style: none;
-    margin-top: .5rem;
-}
+// #jeopardy-board ul li {
+//     width: 7rem;
+//     height: 4rem;
+//     flex: auto;
+//     list-style: none;
+//     margin-top: .5rem;
+// }
 
-#jeopardy-board ul li button {
-    width: 7rem;
-    height: 4rem;
-}
+// #jeopardy-board ul li button {
+//     width: 7rem;
+//     height: 4rem;
+// }
 
-.questions {
+.hide {
     display: none;
 }
 
-.show {
-    display: block;
+.questions {
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    background-color: $font-color2;
+    padding: 2rem 0;
+
+    .x-button {
+        border: none;
+        padding: 5px;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+
+        :hover {
+            background-color: red;
+            color: white;
+        }
+
+        :active {
+            background-color: gray;
+            color: black;
+        }
+    }
+
+    .answer-input {
+        position: absolute;
+        top: 50%;
+        width: 50%;
+        height: 2rem;
+        transform: translate(-50%, -50%);
+        text-indent: 15px;
+        font-size: larger;
+    }
+
+    .answer-btn {
+        position: relative;
+        transform: translate(-50%, -50%);
+        top: 10rem;
+        padding: 5px;
+        border: none;
+
+        :active {
+            background-color: gray;
+            color: white;
+        }
+    }
 }
 
+// .questions .x-button {
+//     border: none;
+//     padding: 5px;
+//     position: absolute;
+//     top: 5px;
+//     right: 5px;
+// }
+
+// .questions .x-button
+
+// .questions .x-button:active {
+//     background-color: gray;
+//     color: black;
+// }
+
+// .questions .answer-input {
+//     position: absolute;
+//     top: 50%;
+//     width: 50%;
+//     height: 2rem;
+//     transform: translate(-50%, -50%);
+//     text-indent: 15px;
+//     font-size: larger;
+// }
+
+// .questions .answer-btn {
+//     position: relative;
+//     transform: translate(-50%, -50%);
+//     top: 10rem;
+//     padding: 5px;
+//     border: none;
+// }
+
+// .questions .answer-btn:active {
+//     background-color: gray;
+//     color: white;
+// }
+ 
 footer {
     position: absolute;
     bottom: 0;

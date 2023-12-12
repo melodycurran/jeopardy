@@ -5,13 +5,18 @@
     <link rel="icon" type="image/svg+xml" href="https://www.creativefabrica.com/wp-content/uploads/2023/05/08/Video-Game-Controller-Logo-Graphics-69127373-1-1-580x387.png" />
     <link rel="stylesheet" type="text/css" href=".\css\styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="../controller/board.js" type="module"></script>
+    <script src="../controller/play.js" type="module" defer></script>
     <title>Jeopardy! | Play</title>
   </head>
   <body>
     <div id="app">
+        <header>
+          <h1>Jeopardy!</h1>
+          <p id="score">Score: </p>
+        </header>
       
         <main id="jeopardy-board">
+          <div id="jeopardy-board__div"></div>
         </main>
 
         <footer>
