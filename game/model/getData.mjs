@@ -58,7 +58,7 @@ export function random(number) {
 }
 
 export async function getJson() {
-    let res = await fetch('../public/data.json');
+    let res = await fetch('../data.json');
     let jsonData = await  res.json();
 
 
