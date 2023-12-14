@@ -56,3 +56,11 @@ export function random(number) {
     /*Creates random number */
     return Math.floor(Math.random() * number);
 }
+
+export async function getJson() {
+    let res = await fetch('../public/data.json');
+    let jsonData = await  res.json();
+
+
+    return jsonData.data[0].categories;
+}

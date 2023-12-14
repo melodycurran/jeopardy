@@ -1,0 +1,47 @@
+{"data": [
+        {"categories": [
+            {"title": "Take me to Church", "id": 1, "data": [
+                {"id": 1, "question": "Built to commemorate the defeat of the Tatars, St. Basil's Cathedral is in this capital city", "answer": "Moscow"},
+                {"id": 2, "question": "In ancient Rome it was a temple to 12 gods; in the 600s it became a church to just one, holding the remains of martyrs", "answer": "The Pantheon"},
+                {"id": 3, "question": "In 2023 16th St. Baptist in this city marks 150 years of the congregation, a history marred by a 1963 bombing", "answer": "Birmingham Alabama"},
+                {"id": 4, "question": "Climbing up on Montmartre Hill, I could see Paris' city lights & this basilica whose name means sacred heart", "answer": "The Sacre-Coeur"},
+                {"id": 5, "question": "Controlled by the Palestinian Authority, the Church of this is believed to mark the birthplace of Jesus in Bethlehem", "answer": "the Church of the Nativity"}
+            ]},
+            {"title": "Quick Planets", "id": 2, "data": [
+                {"id": 6, "question": "About half the size of Earth, it has a 24.6-hour day", "answer": "Mars"},
+                {"id": 7, "question": "For 20 years in every 248, it's further from the Sun than Pluto", "answer": "Neptune"},
+                {"id": 8, "question": "It was the first planet explored by a spacecraft, 1962's Mariner 2", "answer": "Venus"},
+                {"id": 9, "question": "Leda is one of its more than 50 named moons", "answer": "Jupiter"},
+                {"id": 10, "question": "It's surrounded by phenomena named A, B, C, D, E, F & G", "answer": "Saturn"}
+            ]},
+            {"title": "Everything's coming up rose", "id": 3, "data": [
+                {"id": 11, "question": "Born in Boston in 1890, she had 9 children, including John, Robert, Edward & Eunice", "answer": "(Rose) Kennedy"},
+                {"id": 12, "question": "In 1986 she won an Emmy award for playing Rose Nylund on 'The Golden Girls'", "answer": "Betty White"},
+                {"id": 13, "question": "After appearing in the \"Ziegfeld Follies\", she starred in \"Star and Garter\"", "answer": "Gypsy Rose Lee"},
+                {"id": 14, "question": "Rose of Sharon is pregnant & subsequently abandoned by her spouse in California in this Steinbeck novel", "answer": "The Grapes of Wrath"},
+                {"id": 15, "question": "D.C. socialite Rose O'Neal Greenhow sent word that Union troops were moving on Manassas, helping the Confederates before this battle", "answer": "The Battle of Bullrun"}
+            ]},
+            {"title": "Slang en Español", "id": 4, "data": [
+                {"id": 16, "question": "This Spanish word for father can also mean \"cool!\" when it comes after \"que\" in a phrase", "answer": "padre"},
+                {"id": 17, "question": "In Venezuela enratonado, \"moused\", means you're in this condition after a night of too much rum & cocuy", "answer": "hungover"},
+                {"id": 18, "question": "Ay! Fans of Bart Simpson know this interjection is used to express surprise or dismay", "answer": "Ay Caramba!"},
+                {"id": 19, "question": "Don't act too high & mighty in Mexico or you might be called a \"fresa\", which literally translates to this fruit", "answer": "a Strawberry"},
+                {"id": 20, "question": "\"The chabón abides\" in Argentina, as el chabón is a local equivalent of this--it's also a nickname for Pope Francis", "answer": "dude"}
+            ]},
+            {"title": "It's a TV History", "id": 5, "data": [
+                {"id": 21, "question": "\"O.M.I.T.B.\" is short for this, a show & the podcast within it", "answer": "Only Murders in the Building"},
+                {"id": 22, "question": "Season one of this series ended with the title teen sleuth solving the murder of her best friend Lilly Kane", "answer": "Veronica Mars"},
+                {"id": 23, "question": "(I'm Zoë Chao.) I just murdered it on Apple TV+ in \"The Afterparty\", or did I? Either way, my character of Zoe was a suspect as well as the ex-wife of Brett, played by this man who was a \"Celebrity Jeopardy!\" champion in 2022", "answer": "(Ike) Barinholtz"},
+                {"id": 24, "question": "Nicole Kidman played Celeste, whose abusive husband Perry was pushed to his death in this series based on a Liane Moriarty novel", "answer": "Big Little Lies"},
+                {"id": 25, "question": "On the BBC's \"Sherlock\", this acting pair are the modern day Holmes & Watson", "answer": "Cumberbatch and Freeman"}
+            ]},
+            {"title": "Revolution", "id": 6, "data": [
+                {"id": 26, "question": "A peaceful 1905 worker's march turned into what was later called \"Bloody\" this after Grand Duke Vladimir ordered an attack", "answer": "Bloody Sunday"},
+                {"id": 27, "question": "After ordering the deaths of hundreds, Sadegh Khalkhali was much feared after this country's 1979 revolution", "answer": "Iran"},
+                {"id": 28, "question": "Casimir Pulaski died after attacking this key Georgia port, occupied by loyalists during much of the Revolutionary War", "answer": "Savannah"},
+                {"id": 29, "question": "After a speech by Khrushchev in 1956, this country revolted, but the Soviets intervened before year's end", "answer": "Hungary"},
+                {"id": 30, "question": "Ordinal name for the commoners who turned into a revolutionary national assembly in 1789 France", "answer": "the Third Estate"}
+            ]}
+        ]}
+    ]
+}

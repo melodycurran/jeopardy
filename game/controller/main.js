@@ -18,7 +18,7 @@ import { createPlayer } from "./register.mjs";
         window.localStorage.setItem('so-player', JSON.stringify(player));
 
         //Direct player to the game page
-        location.assign('../view/play');
+        location.assign('./game/view/play');
 });
 
 

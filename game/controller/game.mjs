@@ -1,6 +1,7 @@
 import { getClues } from "../model/getData.mjs";
 import { formatCategories } from "../model/getData.mjs";
 import { random } from "../model/getData.mjs";
+import { getJson } from "../model/getData.mjs";
 
 export const Game = {
     /*Facilitates the game */
@@ -13,12 +14,19 @@ export const Game = {
     async createBoard() {
         /* Main function */
 
-        //get the fomatted categories
-        let categories = await formatCategories();
-
-        //Create a container for the uls and lis
         let divContainer = document.querySelector('#jeopardy-board__div');
         let main = document.querySelector('#jeopardy-board');
+        let categories;
+        let clues;
+
+
+        //get the fomatted categories
+        try {
+            categories = await formatCategories();
+            //Create a container for the uls and lis
+        } catch {
+            categories = await getJson();
+        }
 
         categories.forEach(async element => {
             //Create ul for each category
@@ -29,8 +37,13 @@ export const Game = {
             //Calling the clues API then cutting it down to the first 5 questions
             //I can't set the item limit to just 5 using search params, I guess it's defaulted to 100
             let randomNum = random(5);
-            let clues = (await getClues(element.id)).slice(0,5);
 
+            try {
+                clues = (await getClues(element.id)).slice(0,5);
+            } catch {
+                clues = element.data;
+            }
+                
             clues.forEach((item, index) => {
                 //Adding property of winning in each question object with increments of 100 to 500
                 item.winning = (index + 1) * 100;
@@ -52,7 +65,7 @@ export const Game = {
                     this.manageClickedTiles(item.question, btn, main, item.answer, item.winning);
                 });
             });
-        });
+        });   
     },
 
     manageClickedTiles(question, btn, mainEl, correctAnswer, winning) {
@@ -68,6 +81,7 @@ export const Game = {
         div.setAttribute('class', 'questions');
         x.setAttribute('class', 'x-button');
         answerInput.setAttribute('class', 'answer-input');
+        answerInput.setAttribute('type', 'text');
         submitBtn.setAttribute('class', 'answer-btn');
 
         p.textContent = question;
@@ -105,7 +119,7 @@ export const Game = {
         let btn = document.querySelector('.x-button');
 
         //Run a timer that closes the tile when it reached 5 seconds
-        setTimeout(close,5000);
+        setTimeout(close,10000);
 
         //Listen if the x-button is clicked then close
         btn.addEventListener('click', close);
